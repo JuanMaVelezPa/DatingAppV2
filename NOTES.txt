@@ -1,0 +1,40 @@
+
+
+0. Install
+    .Net
+    Angular (Node)
+    PostMan
+
+1. Skeleton
+    dotnet --info
+    dotnet --help
+    dotnet new -h
+
+    -- INIT --
+    dotnet new sln
+    dotnet new webapi -o API
+    dotnet sln add API
+    cd API
+    dotnet dev-certs https --trust
+    -- CONFIGURATION --
+    appsettings.Develpmetn.json | Microsoft:Warning => Information
+    lauchSetting.json | "launchBrowser": true => false
+    --
+    dotnet watch run
+
+    -- Entitiy Framework --
+    install extension : Nuget Gallery vsc
+    nuget: Microsoft.EntitiyFrameWorkCore.Sqlite v5*
+    mkdir Data/DataContext.cs
+    update startup.cs
+    appsettings.Develpmetn.json
+    install dotnet-ef from nuget.org (dotnet tool install --global dotnet-ef --version 5.0.17)
+    install in Nuget:  Microsoft.EntityFrameworkCore.Design V5
+    cd API
+    cmd dotnet ef migrations add InitialCreate -o Data/Migrations
+    dotnet ef database update
+
+
+
+
+    
