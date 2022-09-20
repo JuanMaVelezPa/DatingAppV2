@@ -7,4 +7,4 @@ API/dotnet run      | watch run
 Client/ng serve     | --watch
 
 ## Database - Sqlite | Entity Framework
---
+---
