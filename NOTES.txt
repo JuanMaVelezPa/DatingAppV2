@@ -35,6 +35,25 @@
     dotnet ef database update
 
 
+2. Angular
+    node --version
+    npm i -g @angular/cli@12
+    ng --version
+    ng new client --strict false
+    cd client
+    ng add ngx-bootstrap
+    npm i font-awesome
 
-
+    -- Install certificates --
+    Copy files from sources of students of the course
+    Install the cert on your local machine  following the instructions
+    Create a folder at the app level, inside it, copy the files server.ctr and server.key
     
+    Update angular.json
+    - In server include
+    "options": {
+            "sslKey": "./ssl/server.key",
+            "sslCert": "./ssl/server.crt",
+            "ssl": true,
+            "browserTarget": "test:build"
+          },
