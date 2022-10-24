@@ -4,7 +4,7 @@ import { MembersService } from './../../_services/members.service';
 import { AccountService } from './../../_services/account.service';
 import { Component, HostListener, OnInit, ViewChild } from '@angular/core';
 import { User } from 'src/app/_models/user';
-import { Member } from 'src/app/_modules/member';
+import { Member } from 'src/app/_models/member';
 import { NgForm } from '@angular/forms';
 
 @Component({
